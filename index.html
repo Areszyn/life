@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Toilet Fun + Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Let's Have Some Fun with Paper Toilet!</h1>
+    
+    <!-- Toilet Paper Section -->
+    <div class="toilet-paper-container">
+      <div class="toilet-paper-roll"></div>
+      <button class="unroll-btn">Unroll Toilet Paper</button>
+    </div>
+
+    <div class="buttons">
+      <a class="ko-fi-btn" href="https://ko-fi.com/YOUR_KOFI_ID" target="_blank">Support on Ko-Fi</a>
+      <!-- Telegram Button with Black & White Logo -->
+      <a class="telegram-btn" href="https://t.me/waspros" target="_blank">
+        <img class="telegram-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_logo.svg/1200px-Telegram_2019_logo.svg.png" alt="Telegram" />
+        Join on Telegram
+      </a>
+    </div>
+  </div>
+
+  <!-- Ko-Fi Floating Chat Widget Script -->
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('areszyn', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Donate',
+      'floating-chat.donateButton.background-color': '#d9534f',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
