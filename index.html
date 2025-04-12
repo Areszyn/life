@@ -19,20 +19,22 @@
       border: none;
       width: 100%;
       max-width: 420px;
-      height: 600px;
-    }
-    iframe#kofiframe {
-      border: none;
-      width: 100%;
-      max-width: 420px;
-      padding: 4px;
-      background: #f9f9f9;
-      height: 712px;
+      height: 100vh;
     }
   </style>
 </head>
 <body>
   <iframe class="toilet" src="https://papertoilet.com" title="Paper Toilet"></iframe>
-  <iframe id="kofiframe" src="https://ko-fi.com/areszyn/?hidefeed=true&widget=true&embed=true&preview=true" title="areszyn"></iframe>
+
+  <!-- Ko-fi Floating Chat Script -->
+  <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+  <script>
+    kofiWidgetOverlay.draw('areszyn', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#00b9fe',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
+  </script>
 </body>
 </html>
