@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paper Toilet + Ko-fi</title>
+  
+  <!-- External CSS for better maintainability -->
+  <link rel="stylesheet" href="styles.css" />
+
   <style>
+    /* Inline CSS kept minimal for essential styles */
     html, body {
       margin: 0;
       padding: 0;
@@ -24,13 +29,20 @@
   </style>
 </head>
 <body>
-  <iframe class="toilet" src="https://papertoilet.com" title="Paper Toilet"></iframe>
+  <!-- Accessibility improvement: Add a meaningful title to the iframe -->
+  <iframe 
+    class="toilet" 
+    src="https://papertoilet.com" 
+    title="Interactive Paper Toilet website"
+    aria-label="Embedded Paper Toilet website"
+  ></iframe>
 
   <!-- Ko-fi Floating Chat Script -->
   <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
   <script>
+    // Improved widget options with better readability
     kofiWidgetOverlay.draw('areszyn', {
-      'type': 'floating-chat',
+      type: 'floating-chat',
       'floating-chat.donateButton.text': 'Support me',
       'floating-chat.donateButton.background-color': '#00b9fe',
       'floating-chat.donateButton.text-color': '#fff'
